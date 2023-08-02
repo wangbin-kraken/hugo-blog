@@ -1,10 +1,11 @@
+---
 #-----------------------------------------
 # Hugo NexT 主题参数配置
 # Configure Settings for Hugo NexT theme
 #-----------------------------------------
 
 # 需要显示文章的部分，即content目录下的文件夹名称
-# Sections for show in home & archive page 
+# Sections for show in home & archive page
 # and it's forlder name which under content
 mainSections: ["post"]
 # 年，月，日及时间的格式化样式
@@ -25,21 +26,20 @@ scheme: Gemini
 # Dark Mode
 darkmode: true
 
-
 # 站点基本信息
 # Site Information Settings
-author: NexT 主题
-subtitle: 为 Hugo 打造的主题
-description: 保持简单的易用性和强大的功能。
-keywords: Hugo,NexT,主题,简单,强大
+author: kraken
+subtitle: kraken的博客
+description: You know nothing
+keywords: Hugo,NexT,kraken,王斌
 
 # 不同尺寸站点图标
 # Different size of favicon
 favicon:
-  icon: /imgs/icons/favicon.ico
-  small: /imgs/icons/favicon_16x16_next.png
-  medium: /imgs/icons/favicon_32_32_next.png
-  appleTouchIcon: /imgs/icons/apple_touch_icon_next.png
+  icon: /images/icons/favicon.ico
+  small: /images/icons/favicon-16x16.png
+  medium: /images/icons/favicon-32_32.png
+  appleTouchIcon: /images/icons/apple-touch-icon.png
 
 # 自定义 Logo （目前只支持 Mist 页面模式）
 # Custom Logo (Warning: Only support scheme Mist)
@@ -75,9 +75,9 @@ creativeCommons:
 openGraph:
   enable: true
   #twitter:
-   #creator: <twitter:creator>
-   #image: <twitter:image>
-   #site: <twitter:site>
+  #creator: <twitter:creator>
+  #image: <twitter:image>
+  #site: <twitter:site>
   #googlePlus: <g+:profile_link>
   #facebook:
   #  admins: <fb:admin_id>
@@ -89,7 +89,6 @@ menuSets:
   icons: true
   transition: true
   badges: true
-
 
 # ---------------------------------------------------------------
 # 侧边栏设置
@@ -103,7 +102,7 @@ sidebar:
   # 自定义侧边栏的宽度，默认配置如下
   # Muse | Mist: 320
   # Pisces | Gemini: 240
-  # 
+  #
   # Manual define the sidebar width. If commented, will be default for:
   # Muse | Mist: 320
   # Pisces | Gemini: 240
@@ -114,7 +113,7 @@ sidebar:
   #  - always  在所有页面展开显示
   #  - hide    点击侧边栏按钮才显示
   #  - remove  完全不显示侧边栏
-  # 
+  #
   # Sidebar Display (only for Muse | Mist), available values:
   #  - post    expand on posts automatically. Default.
   #  - always  expand for all pages automatically.
@@ -134,20 +133,20 @@ sidebar:
 avatar:
   # 设置显示头像的相对路径
   # Replace the default image and set the url here.
-  url: /imgs/hugo_next_avatar.png
+  url: /images/avatar.png
   # 开启头像的圆形显示效果
   # If true, the avatar will be displayed in circle.
   rounded: true
   # 开启头像随鼠标转动动画
   # If true, the avatar will be rotated with the cursor.
   rotated: true
-siteState: 
+siteState:
   # 是否在侧边栏显示文章、分类、标签信息
   # Posts / Categories / Tags in sidebar.
   basic: true
   # 站点访问信息
   # Site information
-  views: 
+  views:
     enable: true
     # 组件类型，可选值为： 51la, busuanzi
     # 使用51la时需要注册账号：https://invite.51.la/1NUfGTS1?target=V6
@@ -161,10 +160,10 @@ siteState:
 # Usage: `Key: name || permalink || icon`
 # Key is the link label order.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
-socials: 
-  social0: Github || https://github.com/elkan1788 || fab fa-github
+socials:
+  social0: Github || https://github.com/wangbin-kraken || fab fa-github
   #social1: E-Mail || mailto:yourname@gmail.com || fa fa-envelope
-  social2: 知乎 || https://www.zhihu.com/people/lisenhui || fa fa-book
+  #social2: 知乎 || https://www.zhihu.com/people/lisenhui || fa fa-book
   #Google: https://plus.google.com/yourname || fab fa-google
   #Twitter: https://twitter.com/yourname || fab fa-twitter
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook
@@ -204,7 +203,7 @@ linksSets:
 # 用法： `Key: 显示名称 || 链接地址`
 # Links of your friends
 # Usage: `Key: name || permalink`
-links: 
+links:
   link0: Hugo-NexT || https://gitee.com/hugo-next/hugo-theme-next
   link1: 凡梦星尘空间站 || https://lisenhui.cn
 
@@ -217,17 +216,16 @@ toc:
   # Automatically add list number to toc.
   number: true
   # 开启自动换行显示
-  # If true, all words will placed on next lines 
+  # If true, all words will placed on next lines
   # if header width longer then sidebar width.
   wrap: false
   # 自动展开子列表
-  # If true, all level of TOC in a post will be displayed, 
+  # If true, all level of TOC in a post will be displayed,
   # rather than the activated part of it.
   expandAll: false
   # 最大的列表深度，建议不要超过3层
   # Maximum heading depth of generated toc.
   maxDepth: 3
-
 
 # ---------------------------------------------------------------
 # 站点底部设置
@@ -238,9 +236,9 @@ footer:
   # Enable google translate in footer
   translate: true
   # 站点开始年份，默认为当下时间的年份
-  # Specify the year when the site was setup. 
+  # Specify the year when the site was setup.
   # If not defined, current year will be used.
-  since: 2010
+  since: 2023
 
   # 年份和版权信息之间的图标
   # Icon between year and copyright info.
@@ -261,13 +259,13 @@ footer:
 
   # 显示 Hugo 和 NexT 支持
   # Powered by Hugo & NexT
-  powered: true
+  powered: false
 
   # 国内 ICP 备案和公安网备信息
-  # Beian ICP and gongan information for Chinese users. 
+  # Beian ICP and gongan information for Chinese users.
   # See: https://beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
-    enable: true
+    enable: false
     # ICP 备案的具体信息
     icp: 粤ICP备 18047355-1 号
     # 公安网备的省份简称
@@ -276,9 +274,9 @@ footer:
     gonganNum: 31011402009770
 
   # 站点支持供应商列表
-  # Vendors list who support website. 
+  # Vendors list who support website.
   vendors:
-    enable: true
+    enable: false
     # 支持说明
     # Some support information description.
     title: 提供CDN/云资源支持
@@ -286,18 +284,17 @@ footer:
     # Vendors list, remember that who with logo image need put in top.
     list:
       - name: Vercel
-        image: 
+        image:
           url: /imgs/vendors/vercel.svg
           width: 50
         link: https://vercel.com
       - name: 又拍云
-        image: 
+        image:
           url: /imgs/vendors/upyun.png
           width: 43
         link: https://upyun.com
       - name: Webify
         link: https://webify.cloudbase.net
-
 
 # ---------------------------------------------------------------
 # 文章参数设置
@@ -306,7 +303,7 @@ footer:
 
 # TODO
 # 将文章的描述内容用于首页展示（暂时未实现）
-# Automatically excerpt description in homepage 
+# Automatically excerpt description in homepage
 # as preamble text (not implemented by now).
 excerptDesc: true
 
@@ -318,27 +315,27 @@ readMoreBtn: true
 # 开启文章头部元素显示
 # Post meta display settings
 postMeta:
-    # 是否开启各元素的文字显示 
-    itemText: true
-    created: true
-    updated:
-      enable: true
-      anotherDay: true
-    categories: true
-    wordCount: true
-    readTime: true
-    # 是否开启评论数显示
-    comments: 
-      enable: false
-      # 评论统计插件，暂只支持waline
-      # Comment counter plugin, only support waline
-      plugin: waline
-    # 是否开启页面访问数显示
-    views:
-      enable: true
-      # 页面访问统计插件，支持busuanzi, waline, leancloud
-      # Page views counter plugin, support: busuanzi, waline, leancloud
-      plugin: busuanzi
+  # 是否开启各元素的文字显示
+  itemText: true
+  created: true
+  updated:
+    enable: true
+    anotherDay: true
+  categories: true
+  wordCount: true
+  readTime: true
+  # 是否开启评论数显示
+  comments:
+    enable: false
+    # 评论统计插件，暂只支持waline
+    # Comment counter plugin, only support waline
+    plugin: waline
+  # 是否开启页面访问数显示
+  views:
+    enable: true
+    # 页面访问统计插件，支持busuanzi, waline, leancloud
+    # Page views counter plugin, support: busuanzi, waline, leancloud
+    plugin: busuanzi
 
 # 文章底部的设置
 # Post footer settings
@@ -355,7 +352,7 @@ postFooter:
 # Donate (Sponsor) settings.
 rewardSets:
   # 是否开启捐赠按钮，开启后将在每个文章页面底部显示
-  # If true, a donate button will be displayed 
+  # If true, a donate button will be displayed
   # in every article by default.
   enable: true
   # 是否开启捐赠方式的动画效果
@@ -369,8 +366,8 @@ rewardSets:
   # Donate type
   # Usage: `name:image url`
   reward:
-    wechatpay: /imgs/wechat-pay.png
-    alipay: /imgs/ali-pay.png
+    wechatpay: /images/wechat-pay.jpg
+    alipay: /images/ali-pay.jpg
     #paypal: /images/paypal.png
     #bitcoin: /images/bitcoin.png
 
@@ -389,8 +386,7 @@ followMe:
 # Easily browse and edit blog source code online.
 postEdit:
   enable: true
-  url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/
-
+  url: https://github.com/wangbin-kraken/hugo-blog/tree/main/content/post
 
 # 设置文本的对齐方式
 # Set the text alignment in posts / pages.
@@ -420,7 +416,7 @@ bodyScrollbar:
 
 # 代码块的设置
 # Codeblock settings
-codeblock:    
+codeblock:
   # 支持样式类型： default | flat | mac
   # Available values: default | flat | mac
   style: mac
@@ -487,11 +483,10 @@ githubBanner:
   enable: true
   # 你的 Github 仓库地址
   # Your repository url on Github.
-  permalink: https://github.com/hugo-next
+  permalink: https://github.com/wangbin-kraken
   # 关注说明
   # Show this title when cursor move on.
   title: Follow me on GitHub
-
 
 # ---------------------------------------------------------------
 # TODO
@@ -546,7 +541,6 @@ font:
     external: true
     family:
 
-
 # ---------------------------------------------------------------
 # SEO 设置
 # SEO Settings
@@ -554,7 +548,7 @@ font:
 
 # 给所有外部链接添加新标签打开
 # Automatically add `target='_blank'` attribute in external URL.
-exturl: 
+exturl:
   enable: true
   # 给所有外部链接加上图标
   # If true, an icon will be attached to each external URL
@@ -580,7 +574,6 @@ yandexSiteVerification: #<verify_code>
 # See: https://ziyuan.baidu.com/site
 baiduSiteVerification: #<verify_code>
 
-
 # ---------------------------------------------------------------
 # 第三方插件和服务设置
 # Third Party Plugins & Services Settings
@@ -593,7 +586,7 @@ baiduSiteVerification: #<verify_code>
 #math: mathjax
 
 # TODO
-# FancyBox is a tool that offers a nice and elegant way 
+# FancyBox is a tool that offers a nice and elegant way
 # to add zooming functionality for images.
 # For more information: https://fancyapps.com/fancybox/
 fancybox: false
@@ -628,7 +621,6 @@ quicklink:
   # Default (true) will attempt to use the fetch() API if supported (rather than link[rel=prefetch]).
   priority: true
 
-
 # ---------------------------------------------------------------
 # 评论功能设置
 # Comments Settings
@@ -639,15 +631,15 @@ quicklink:
 comments:
   # 开启评论组件
   # If true, will show comment component in post end.
-  enable: true   
+  enable: true
   # 设置默认使用的评论插件
   # 可选值：livere | waline | utterances | artalk | giscus
   # Choose a comment system to be displayed by default.
-  # Available values: livere | waline | utterances | artalk | giscus 
+  # Available values: livere | waline | utterances | artalk | giscus
   active: waline
   # 让用户自己选择使用评论插件留言
   # 如果设置为 false，将采用 active 参数的那个插件
-  # Setting `true` means remembering the comment system selected by 
+  # Setting `true` means remembering the comment system selected by
   # the visitor, otherwise use the `active` setting comment system.
   storage: false
   # TODO
@@ -676,9 +668,9 @@ waline:
   emoji: false
   imgUploader: false
   wordLimit: 200
-  requiredMeta: ['nick', 'mail']
+  requiredMeta: ["nick", "mail"]
   reaction: true
-  reactionText: [ '点赞', '踩一下', '得意', '不屑', '尴尬', '睡觉']
+  reactionText: ["点赞", "踩一下", "得意", "不屑", "尴尬", "睡觉"]
   reactionTitle: "你认为这篇文章怎么样？"
   # 请注意换成个人的 Waline Server 服务器地址
   # Please replace this with your waline server URL
@@ -753,7 +745,6 @@ giscus:
   # Available values: light | light_high_contrast | light_protanopia | light_tritanopia | dark | dark_high_contrast | dark_protanopia | dark_tritanopia | dark_dimmed | transparent_dark | preferred_color_scheme
   theme: preferred_color_scheme
 
-
 # ---------------------------------------------------------------
 # 文章小组件和分享服务设置
 # Post Widgets & Content Sharing Services
@@ -765,15 +756,14 @@ giscus:
 # To get your ID visit https://widgetpack.com
 rating:
   enable: false
-  id:     # <app_id>
-  color:  "#fc6423"
+  id: # <app_id>
+  color: "#fc6423"
 
 # AddThis文章分享功能
 # 更多信息及配置请参考：https://www.addthis.com
-# AddThis Share. 
+# AddThis Share.
 # See: https://www.addthis.com
-addThisId: #<Your addthis> 
-
+addThisId: #<Your addthis>
 
 # ---------------------------------------------------------------
 # 站点统计功能
@@ -784,8 +774,8 @@ analytics:
   # 51La 站点统计
   # 更多信息请参考：https://invite.51.la/1NUfGTS1?target=V6
   # 51La Analytics
-  # See: https://invite.51.la/1NUfGTS1?target=V6 
-  #laId: #<anaytics_id> 
+  # See: https://invite.51.la/1NUfGTS1?target=V6
+  #laId: #<anaytics_id>
   # 百度统计
   # Baidu Analytics
   #baidu: #<anaytics_id>
@@ -798,7 +788,6 @@ analytics:
   busuanzi:
     visitorsIcon: fa fa-user
     viewsIcon: fa fa-eye
-
 
 # ---------------------------------------------------------------
 # 内容搜索服务
@@ -840,7 +829,6 @@ localSearch:
   preload: false
   limit: 1000
 
-
 # ---------------------------------------------------------------
 # 在线聊天服务
 # Chat Services
@@ -858,7 +846,6 @@ chat:
 gitter:
   enable: true
   room: hugo-next/community
-
 
 # ---------------------------------------------------------------
 # TODO
@@ -904,7 +891,6 @@ mermaid:
     light: default
     dark: dark
 
-
 # ---------------------------------------------------------------
 # 动画效果设置
 # Animation Settings
@@ -947,7 +933,6 @@ canvasRibbon:
   size: 300 # The width of the ribbon
   alpha: 0.6 # The transparency of the ribbon
   zIndex: -1 # The display level of the ribbon
-
 
 # ---------------------------------------------------------------
 # CDN 服务（暂时只支持 unpkg 和 cndjs）
